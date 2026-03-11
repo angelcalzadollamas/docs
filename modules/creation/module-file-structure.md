@@ -8,6 +8,12 @@ weight: 2
 A module is made of a lot of files, all stored in a folder that bears the same name as the module, that folder being in turn stored in the
 `/modules` folder at the root of the main PrestaShop folder: `/modules/<modulename>/`. 
 
+{{% notice note %}}
+The module's root folder **must** have the same name as the module's main PHP file.  
+For example: a module in `/modules/mymodule/` must contain its main file as `/modules/mymodule/mymodule.php`.  
+If the names don't match, PrestaShop will not detect or install the module correctly.
+{{% /notice %}}
+
 {{% notice tip %}}
 Your module can be called anything, as long as it only contains lowercase letters and numbers (`/[a-z0-9]/`).
 Although accepted, we strongly discourage using underscores (`_`) because they don't work with translation domains.
